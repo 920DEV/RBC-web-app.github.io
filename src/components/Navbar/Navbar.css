@@ -1,0 +1,201 @@
+*{
+  margin:0px;
+  padding:0px;
+  box-sizing: border-box;
+}
+.header{
+  width:100vw;
+  height: 15vh;
+  position: sticky;
+  top: 0px;
+  z-index: 1000;
+  display: flex;
+  align-items:center;
+  overflow: hidden;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  box-shadow: 0px 0px 10px 5px rgba(86, 110, 191, 0.479);
+  border-bottom-left-radius:3px;
+  border-bottom-right-radius:3px;
+  overflow: hidden;
+  transition: all 0.2s ease-in;
+}
+
+
+/* Logo design */
+
+.logo{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 40vw;
+  padding:5rem 2rem;
+  margin-right: 10px;
+}
+/* Logo image  */
+.logo .logo_img{
+  width: 150px;
+  height: 90px;
+}
+
+/* Navbar styling */
+.NavBar{
+  width:50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content:center; 
+}
+
+
+/* Menu keys styling */
+.menu-list{
+  width: 0%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content:space-around;
+  list-style-type:none;
+  padding: 2rem 3rem 3rem 3rem;
+}
+
+.menu-list li .list{
+  height:10vh;
+  text-decoration: none;
+  color:#000;
+  padding: 5px;
+  font-size: 1.3rem;
+  font-weight: 500;
+  font-family: 'Times New Roman', Times, serif;
+  transition: all 0.3s ease-in;
+  margin:0 15px; 
+
+}
+.menu-list li .list:hover{
+  color:rgb(255, 81, 0);
+  transition: 0.3s ease-in;
+  transform: scale(1.1);
+  text-shadow: #000;
+  
+}
+
+.menu-list li .list:active,.sign-page:active{
+  color:rgb(224, 108, 13);
+}
+
+.menu-list li #login button{
+  background-color:#6eabca;
+  border:none;
+  width: 90px;
+  cursor:pointer;
+  height: 35px;
+  text-align: center;
+  color: #fff;
+  font-size: 1rem;
+  border-radius:5px;
+}
+.menu-list li #login button:hover{
+  transition: all 0.3s ease-in;
+  width:90px;
+  background-color: rgb(255, 255, 255);
+  color: #2a52bd;
+  font-weight:500;
+}
+.mobile-bar{
+  display:none;
+}
+
+/* Navbar when scrolled */
+.fixed{
+  transition:all 0.2s linear;
+  display: flex;
+  align-items: center;
+background-color:rgba(112, 118, 230);
+  justify-content: space-between;
+}
+.fixed .menu-list .list{
+  color:#fff;
+}
+/* Screen ration less than 900 px */
+@media only screen and (max-width:900px){
+  .header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .fixed{
+    transition:all 0.2s linear;
+    display: flex;
+    align-items: center;
+  background-color:rgba(112, 118, 230);
+    justify-content: space-between;
+  }
+  /* Displaying the menu-bar icon on the screen less than 900px */
+  
+.mobile-bar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position:relative;
+  width:50px;
+  height:10vh;
+  border: none;
+  font-size: 2rem;
+  margin-top:5px;
+}
+.mobile-bar .menu-icon{
+  color:rgb(80, 80, 237);
+  cursor:pointer; 
+  display: block;
+  z-index: 200;
+}
+
+/* styling of navbar on the moblie */
+
+.menu-list{
+  position: absolute;
+  top: 15vh;
+  display: flex;  
+  flex-direction: column;
+  background: #5456cb;
+  right:0;
+  width: 65vw;
+  height: 100vh;
+  transform: translateX(100%);
+  transition: all .2s linear;
+  z-index: 1000;
+}
+.mobile-NavBar {
+  transform: translateX(0%);
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  position:fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content:space-around;
+}
+.menu-list li .list{
+  margin: 10px auto;
+  color:#ffff;
+}
+.fixed{
+  display: flex;
+  justify-content: center;
+  align-items:center;
+}
+.fixed .mobile-NavBar{
+top:15vh;
+transition: all 0.25s ease;
+}
+.logo{
+  display: flex;
+  justify-content: flex-start;
+  padding:2px 5px;
+}
+.fixed .menu-icon{
+  color:#fff;
+}
+}

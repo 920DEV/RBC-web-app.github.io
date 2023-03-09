@@ -1,0 +1,92 @@
+
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}   
+.cources-container2{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width:100%;
+    padding: 20px;
+    background-image: linear-gradient(45deg,rgba(112, 118, 230),#ffffff,rgba(112, 118, 230));
+}
+/* styling cources heading in a crousel */
+.scnd-heading{
+    margin-top:10px;
+    width:40%;
+    height:100px;
+    background-image:linear-gradient(180deg,rgba(112, 118, 230),rgba(114, 113, 192));
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+    color:#ffff;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    font-size: 2rem;
+}
+
+.popular-cources{
+    width:100vw;
+    height:100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+    align-items: center;
+
+    padding: 20px;
+}
+/* Styling of carousel */
+.carousel-container{
+    display: flex;
+    /*justify-content:flex-start;
+    align-items: flex-start; */
+    width: 80%;
+    height:70vh;
+    padding:10px;
+    background-color:#ffff;
+    border-radius:10px ;
+   }
+   /* Styling of card within carousl  */
+.carousel-container .cards-image{
+    margin: 20px;
+    width:250px;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border:1px solid #98b9cdb0;
+    border-radius:30px;
+    /* box-shadow: 0px 0px 8px 4px rgba(208, 209, 214, 0.5); */
+    background-color: #ffff;
+    padding:15px 10px;
+}
+.cource-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.cource-info p,h1{  
+    text-align: center; 
+    color:rgb(8, 8, 9) ;
+}
+.popular-cources .carousel-container .cards-image img{
+    padding:5px 5px;
+    width: 15vw;
+    height: 35vh;
+    margin-bottom: 5px;
+    border-radius: 5px 5px 0 0;
+    box-shadow: 0px 0px 5px 5px rgba(13, 45, 107, 0.2);
+    transition: all 0.3s ease-in;
+}
+.carousel-container .cards-image:hover{
+    transform: scale(1.1);
+}

@@ -1,0 +1,407 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+.main-page::before{
+    content:"";
+    width:100%;
+    height: 130vh;
+    position:absolute;
+    top:0;
+    transition:all 0.2s ease-in;
+    background:linear-gradient(#f2f2f5d6,rgba(112, 118, 230,0.4)),url("../../Assets/images.jfif") no-repeat center/cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    scroll-behavior:smooth;
+    z-index:-10;
+}
+
+.main-page{
+    content:"";
+    width:100%;
+    height: 100vh;
+    transition:all 0.2s ease-in;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    scroll-behavior:smooth;
+    z-index:10;
+}
+.main-page>h1{
+    margin-bottom: 30px;
+    display: flex;    
+    justify-content: center;
+    height: auto;
+    width: auto;
+    align-items: center;
+    text-align: center;
+    padding: 4px 4rem;
+    font-size: 6em;
+    font-weight: 1000;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    color:transparent;
+    -webkit-text-stroke: 2px #efff;
+    background-image: url("../../Assets/text-image.jpg");   
+    background-clip:text;
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: animate 10s linear infinite;
+}
+.main-page>p{
+    display: flex;
+    text-align: center;
+    width: 50%;
+    justify-content: center;
+    align-items:center;
+    font-size: 2rem;
+    text-decoration: wavy;
+    color: #ffff;
+    font-style: italic;
+    font-weight: 400;
+    line-height:2rem;
+    margin-bottom: 30px;
+}
+
+.main-page .btn{
+    background-color: transparent;
+    border-style: none;
+    display: flex;
+    width:80%;
+    height:auto;
+    justify-content:center;
+    align-items: center;
+    margin-top: 5px;
+
+}
+.btn button{
+    border:none;
+    background-color: transparent;
+}
+.btn button .more-btn{
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    background-color:rgba(3, 116, 116, 0.8);
+    text-decoration: none;
+    color:#ffff;
+    text-transform: capitalize;
+    height: 35px;
+    width: 180px;
+    text-align: center;
+    border-radius: 5px;
+}
+.btn >button{
+    margin:5px 10px;
+}
+.btn .more-btn span{
+    color: rgb(3, 3, 3);
+    font-size: 1rem;
+    font-weight: 800;
+    margin-left:20px;
+    font-weight: 500;
+
+}
+.btn .more-btn:hover{
+    background-color: rgb(223, 216, 216);
+    color:rgb(35, 19, 172);
+    transition:all 0.5s ease-in;
+}
+
+
+/* cources page styling */
+ .cources-section{
+    position: relative;
+    margin-top:150px;
+    width:100%;
+    height:auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: linear-gradient(#ffffff,rgba(112, 118, 230));
+ }
+ .cources-section .cource-heading{
+    background-image:linear-gradient(100deg,rgba(112, 118, 230),rgba(114, 113, 192));
+    display: flex;
+    flex-direction:column;
+    position: absolute;
+    width: 60vw;
+    height:40vh;
+    font-size: 4rem;
+    align-items:center;
+    justify-content: flex-start;
+    top:-170px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 5px 5px rgba(41, 42, 44, 0.4);
+ }
+ .cources-section .cource-heading >div{
+    width:100%;
+    height: 100%;
+    position:relative;
+     display: flex;
+    flex-direction:column;
+    font-size: 4rem;
+    align-items:center;
+    justify-content: space-around;
+ }
+.cources-types > h1{
+    margin-top:20px;
+    width:80%;
+    position:static;
+    font-size: 2rem;
+    text-transform: uppercase;
+
+    -webkit-text-stroke: 2px #fff;
+    background-clip:text;
+    color:transparent;
+    color:rgb(255, 255, 255);
+    text-align: center;
+}
+
+.cources-types > p{
+    font-size:1.2rem;
+    margin-bottom: 20px;
+    text-align: center;
+    color:#fff;
+}
+.cources-types .para_info,ul{
+    margin-top:10px;
+    display: flex;
+    font-size:1rem;
+    padding:0 5px;
+    justify-content: center;
+    align-content: center;
+    list-style-type:circle;
+
+}
+.cources-types .para_info ul p{
+    text-align: center;
+    font-weight: 700;
+    font-style: italic;
+    margin:auto 5px auto 20px;
+    text-decoration: none;
+}
+.class-option{
+    text-decoration: none;
+    list-style-type: none;
+    color:#80c7e6;
+}
+.class-option:hover{
+    color:#ecc423
+}
+.cources-types #para4{
+    width:80%;
+    margin-top:30px;
+    list-style: none;
+    text-decoration: none;
+    color:#000
+}
+.cources-types #para4 .link{
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    list-style: none;
+}
+.cources-types #para4 .link:hover{
+    color:#ecc423;
+    transition:all 0.3s ease-in;
+}
+
+/* cources container  */
+.cource-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height: 100vh;
+    margin-top: 100px;
+}
+.cource-cards{
+    /* margin-top:100px; */
+    width: 90%;
+    height: 70vh;
+    display: flex;
+    align-items:flex-start;
+    justify-content:space-evenly;
+    padding:10px 15px;
+}
+.cource-container #enhance-cources{
+    display:flex;
+    align-items: center;
+    width:40%;
+    height:10vh;
+    justify-content: center;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    background-image:linear-gradient(180deg,#7076e6,rgb(150, 149, 214));
+}
+
+#enhance-cources> h1{
+    font-size:1.5rem;
+    text-align: center;
+    font-weight: 700;
+    color:#fff;
+    border-bottom: 1px solid #fff;
+}
+
+.cource-cards .cource-image{
+    width:20vw;
+    height: 60vh;
+    margin:auto 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border:1px solid #98b9cdb0;
+    border-radius:30px;
+    box-shadow: 0px 0px 5px 5px rgba(120, 132, 171, 0.5);
+    background-color: #ffffff;
+    padding:15px 10px;
+}
+.cource-cards .cource-image img{
+    padding:5px 5px;
+    width: 15vw;
+    height: 35vh;
+    margin-bottom: 10px;
+
+    border-radius: 5px 5px 0 0;
+    box-shadow: 0px 0px 5px 5px rgba(13, 45, 107, 0.2);
+    transition: all 0.3s ease-in;
+}
+.cource-cards .cource-image:hover{
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.4);
+    transform:scale(1.1);
+    transition:all 0.3s ease-in-out;
+}
+.Enroll-btn button{
+    background-color: #5989d2;
+    border:none; 
+    font-size: 1rem;
+    width:10vw;
+    height:2rem;
+    border-radius: 5px;
+    position: static;
+}
+.Enroll-btn button:hover{
+    transition:all 0.3s ease-in;
+    background-color: #ededed;
+    color: #5989d2;
+}
+
+/* Animations */
+
+@keyframes animate{
+    100%{
+        background-position:2000px 0;
+    }
+}
+
+@media only screen and (max-width:900px){
+.main-page>h1{
+    font-size:4em;
+    font-weight: 800;
+}
+.main-page>p{
+font-size:1rem;
+}
+.btn .more-btn{
+    width:150px;
+    height:30px;
+    text-align:center;
+    font-weight: 300;
+    font-size:0.5rem;
+}
+.btn #btn1{
+    margin-left:5px;
+
+}
+.btn #btn2{
+    margin-right:5px;
+}
+.cources-section{
+    margin-top:150px
+}
+.cources-section .cource-heading{
+    width:80vw;
+    height: 50vh;
+    padding:20px 10px;
+    border-radius: 10px;
+    background-color: #e68080;
+}
+.cource-container .cource-cards{
+    overflow-y: scroll;
+    flex-wrap: wrap;
+    width:100%;
+    height:500px;
+    padding:20px 10px;
+}
+.cources-types > h1{
+    font-size:15px;
+    font-weight: 500;
+}
+.cources-types > p{
+    margin-bottom:2px;
+    font-size: 12px;
+}
+.cources-types .para_info,ul{
+    margin-top:2px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+    padding: 0 2px;
+
+}
+.cources-types .para_info ul p{
+    font-size: 11px;
+}
+.cources-types #para4{
+    margin-top:5px;
+}
+.cource-container #enhance-cources{
+    display:flex;
+    width:80%;
+    height:10vh;
+    justify-content: center;
+    margin:80px auto 10px auto;
+}
+#enhance-cources >h1{
+    font-size: 1rem;
+}
+.cource-container .cource-cards::-webkit-scrollbar{
+    display:block;
+    color: pink;
+    visibility: visible;
+    opacity: 1;
+}
+.cource-cards .cource-image{
+    width:250px;
+    height:400px;
+    padding:10px 15px;
+    margin:5px auto;
+
+}
+.cource-cards .cource-image img{
+    width:200px;
+    height: 250px;
+}
+.Enroll-btn button{
+    width:50px;
+}
+}
