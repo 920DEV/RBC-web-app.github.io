@@ -74,7 +74,7 @@ useEffect(()=>{
               </NavLink>
             </li>
             <li>
-              <NavLink to='/'  id="login" className="list">
+              <NavLink to='/login'  id="login" className="list">
                   <button>SignUp</button>
               </NavLink>
             </li>

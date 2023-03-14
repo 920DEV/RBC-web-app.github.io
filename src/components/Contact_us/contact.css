@@ -8,7 +8,7 @@
 .contact-section{
   min-height: 100vh;
   width: 100%;
-  background-image: linear-gradient(45deg,rgba(112, 118, 230),#ffffff,rgba(112, 118, 230));
+  background-image: linear-gradient(45deg,rgba(112, 118, 230),#dfd5d5,rgba(112, 118, 230));
   display: flex;
   align-items: center;
   justify-content: center;
@@ -140,13 +140,21 @@ height:300px;
    margin-left: 55px;
 }
 }
-@media (max-width: 900px) {
+@media only screen and (max-width: 900px) {
   .contact-container{
-    margin: 40px 0;
+    margin: 40px auto;
+    width:100%;
     height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:0px;
   }
   .contact-container .contact-content{
     flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
   }
  .contact-container .contact-content .left-side{
    width: 100%;
